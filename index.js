@@ -15,8 +15,10 @@
  * =============================================================================
  */
 
-var MOBILENET_MODEL_PATH =  'model/tfjs_model/model.json'
+import * as tf from '@tensorflow/tfjs';
 import {IMAGENET_CLASSES} from './imagenet_classes';
+
+var MOBILENET_MODEL_PATH =  'model/tfjs_model/model.json'
 
 const IMAGE_SIZE = 224;
 const TOPK_PREDICTIONS = 8;

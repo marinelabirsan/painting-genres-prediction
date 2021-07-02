@@ -4,7 +4,6 @@
 <head>
   <title>Identify This Art</title>
   <meta charset="UTF-8">
-  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.0.0/dist/tf.min.js"></script>
   <link rel="stylesheet" href="tfjs-examples.css" />
 </head>
 
@@ -26,40 +25,40 @@
     display: table-cell;
     padding-right: 20px;
   }
-
+  
   #file-container {
     margin-bottom: 20px;
-  }
+}
 </style>
 
 <body>
-  <div class="tfjs-example-container">
+  <div class="tfjs-example-container" style="font-family: 'Courier New'">
     <section class='title-area'>
-      <h1>Painting Genres: Classification of Paintings</h1>
+      <h1 style="font-family:'Brush Script MT', cursive;">Identify This Art</h1>
     </section>
 
     <section>
       <p>
         Author  <a  target='_black'
-          href="https://www.linkedin.com/in/marina-birsan-71a899141/">Marina Bîrsan</a>
+          href="https://www.linkedin.com/in/marina-birsan-71a899141/"> <strong>Marina Bîrsan</strong></a>
       </p>
     </section>
 
     <section>
-      <p class='section-head'>Status</p>
+      <p class='section-head'><strong>Status</strong></p>
       <div id="status"></div>
     </section>
 
     <section>
-      <p class='section-head'>Model Output</p>
+      <p class='section-head'><strong>Model Output</strong></p>
 
-      <div id="file-container" style="display: none">
-        Upload an image: <input type="file" id="files" name="files[]" multiple />
+      <div id="file-container" style="display: none" >
+         Upload an image: <input type="file" id="files" name="files[]" multiple />
       </div>
 
       <div id="predictions"></div>
 
-      <img style="display: none" id="cat" src="images/flower.jpeg" width=224 height=224 />
+      <img style="display: none" id="cat" src="images/abstract.jpg" width=224 height=224 />
     </section>
 
     <script src="index.js"></script>
